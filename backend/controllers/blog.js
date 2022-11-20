@@ -1,4 +1,4 @@
-import Blog from "../model/Blog";
+import Blog from "../model/Blog.js";
 
 const getAllBlogs = async (req, res, next) => {
   let blogs;
@@ -13,3 +13,5 @@ const getAllBlogs = async (req, res, next) => {
   }
   return res.status(200).json({ blogs });
 };
+
+export default getAllBlogs;
